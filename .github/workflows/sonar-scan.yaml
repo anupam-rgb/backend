@@ -39,7 +39,7 @@ jobs:
       run: |
         npm install -g sonar-scanner
         sonar-scanner \
-          -Dsonar.projectKey=ANUPAMTEST \
+          -Dsonar.projectKey=SONAR_HOST_URL \
           -Dsonar.sources=. \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=$SONAR_TOKEN
