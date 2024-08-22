@@ -39,7 +39,7 @@ jobs:
       run: |
         npm install -g sonar-scanner
         sonar-scanner \
-          -Dsonar.projectKey=myexpress \
+          -Dsonar.projectKey=rawcubes-123 \
           -Dsonar.sources=. \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.login=$SONAR_TOKEN
