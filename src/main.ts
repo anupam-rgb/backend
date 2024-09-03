@@ -8,7 +8,7 @@ import { plainToInstance } from 'class-transformer';
 import { AppEnvDto } from 'src/app/dtos/app.env.dto';
 import { MessageService } from 'src/common/message/services/message.service';
 
-async function bootstrap() {
+async function bootstrap() {  
     const app: NestApplication = await NestFactory.create(AppModule);
     const configService = app.get(ConfigService);
     const databaseUri: string = configService.get<string>('database.uri');
